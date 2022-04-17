@@ -27,14 +27,14 @@ header{
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
     height: 150px;
     margin: auto;
-    padding: 40px;
+    padding: 30px;
 }
 
 header h1{
     font-family: var(--fontepadrao);
     font-size: 2.5em;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-top: 20px;
 }
 
@@ -42,6 +42,7 @@ header p{
     color: white;
     font-family: var(--fontepadrao);
     font-size: 1.5em;
+    margin: auto;
 
 }
 
@@ -50,8 +51,26 @@ nav{
     box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.288);
 }
 
+nav a{
+    font-weight: bold;
+    padding: 0px 10px 20px 20px;
+    text-decoration: none;
+    color: var(--cor04);
+    font-family: var(--fontepadrao);
+    font-size: 1em;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.externo::after{
+    content: "\1F517";
+}
+
 main{
-    border-radius: 10px;
+    border-radius: 0px 0px 20px 20px;
     background-color: white;
     margin: auto;
     max-width: 1000px;
@@ -87,14 +106,51 @@ main strong{
 }
 
 main a{
+    border-radius: 3px;
     padding: 3px;
-    background-color: var(--cor04);
+    background-color: var(--cor01);
     text-decoration: none;
-    color: var(--cor02);
+    color: var(--cor04);
     font-weight: bold;
 }
 
 main a:hover{
     text-decoration: underline;
+    color: white;
 }
 
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+
+}
+
+aside h3{
+    padding-bottom: 10px;
+    color: var(--cor05);
+    font-family: var(--fontelato);
+}
+
+aside{
+    background-color: var(--cor01);
+    padding: 20px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+
+aside ul{
+    list-style: "\2714\00A0";
+}
+
+footer{
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--cor05);
+    color: white;
+}
