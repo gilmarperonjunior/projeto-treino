@@ -97,7 +97,7 @@ main h2{
 main p{
     font-family: var(--fontepadrao);
     text-indent: 10px;
-    padding: 0px 0px 12px 12px;
+    padding: 0px 12px 12px 12px;
     text-align: justify;
 }
 
